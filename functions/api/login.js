@@ -13,7 +13,6 @@ export async function onRequestPost(context) {
     //从POST请求中获取authCode
     const jsonRequest = await request.json();
     const authCode = jsonRequest.authCode;
-    throw new Error("Sentry 测试错误 - 登录接口");
 
     // 读取安全设置
     const securityConfig = await fetchSecurityConfig(env);
