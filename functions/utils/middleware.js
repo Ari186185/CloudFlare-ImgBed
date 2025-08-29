@@ -22,7 +22,7 @@ export async function errorHandling(context) {
     } catch (e) { console.log(e) }
     const sampleRate = env.sampleRate || remoteSampleRate;
     return sentryPlugin({
-      dsn: "https://44b7b443108ec6d298044b125ff89d28@o4507644548022272.ingest.us.sentry.io/4507644555100160",
+      dsn: "https://60d48d3a250fd26956f6558c97096c37@o4509927329890304.ingest.de.sentry.io/4509927350599760",
       tracesSampleRate: sampleRate,
     })(context);;
   }
